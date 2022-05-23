@@ -1,0 +1,272 @@
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop
+$ mkdir Portfolio
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop
+$ cd Portfolio/
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio
+$ git init
+Initialized empty Git repository in C:/Users/admin/Desktop/Portfolio/.git/
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ nano index.html
+
+
+
+
+
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ git commit -m "index added"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ git commit -m "index.html added"
+[master (root-commit) 0a8f118] index.html added
+ 1 file changed, 9 insertions(+)
+ create mode 100644 index.html
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (master)
+$ git branch -M main
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git remote add origin https://github.com/Nshatayu07/SE_portfolio.git
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git push -u origin main
+fatal: An error occurred while sending the request.
+fatal: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.
+fatal: The remote certificate is invalid according to the validation procedure.
+(@
+
+
+
+
+fatal: unable to access 'https://github.com/Nshatayu07/SE_portfolio.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ (@
+>
+>
+>
+>
+> ^C
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git push -u origin main
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Nshatayu07/SE_portfolio.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git add index.html
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git commit -m "navbar added"
+[main 1d63295] navbar added
+ 1 file changed, 34 insertions(+), 1 deletion(-)
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 714 bytes | 714.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Nshatayu07/SE_portfolio.git
+   0a8f118..1d63295  main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git pull origin
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 657 bytes | 5.00 KiB/s, done.
+From https://github.com/Nshatayu07/SE_portfolio
+   1d63295..a2018c2  main       -> origin/main
+Updating 1d63295..a2018c2
+Fast-forward
+ about.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.html
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git pull origin
+Already up to date.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git fetch
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git fetch origin
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git fetch origi
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git fetch origin
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git merge origin/main
+Already up to date.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git pull origin main
+From https://github.com/Nshatayu07/SE_portfolio
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git log origin
+fatal: ambiguous argument 'origin': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git log
+commit a2018c2850ef64f2163b9f6c1e32efed92604ef6 (HEAD -> main, origin/main)
+Author: Shatayu Nagdeve <95160665+Nshatayu07@users.noreply.github.com>
+Date:   Mon May 23 16:54:32 2022 +0530
+
+    about page added
+
+commit 1d63295aa3f4a3ae324c756aa3870d1863d8b9fe
+Author: Shraddha <shradhakore274@gmail.com>
+Date:   Mon May 23 11:22:36 2022 -0700
+
+    navbar added
+
+commit 0a8f1184986f64f7d7822803260599c42daa80f6
+Author: Shraddha <shradhakore274@gmail.com>
+Date:   Mon May 23 11:08:03 2022 -0700
+
+    index.html added
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.08 KiB | 4.00 KiB/s, done.
+From https://github.com/Nshatayu07/SE_portfolio
+   a2018c2..0048858  main       -> origin/main
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git pull origin/main
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git pull origin main
+From https://github.com/Nshatayu07/SE_portfolio
+ * branch            main       -> FETCH_HEAD
+Updating a2018c2..0048858
+Fast-forward
+ about.html | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   about.html
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git commit -m "navbar updated , links added"
+[main 5744bd0] navbar updated , links added
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$ git push -u origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.11 KiB | 1.11 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nshatayu07/SE_portfolio.git
+   0048858..5744bd0  main -> main
+branch 'main' set up to track 'origin/main'.
+
+admin@DESKTOP-LII0C46 MINGW64 ~/Desktop/Portfolio (main)
+$
